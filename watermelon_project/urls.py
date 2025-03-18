@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('watermelon_app.urls')),
+    path('user/', include('watermelon_user.urls')),
 ]

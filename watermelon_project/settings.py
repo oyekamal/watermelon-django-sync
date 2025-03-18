@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     
     # Local apps
     'watermelon_app.apps.WatermelonAppConfig',
+    'watermelon_user.apps.WatermelonUserConfig',
 ]
 
 MIDDLEWARE = [
@@ -73,6 +74,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'watermelon_project.wsgi.application'
+AUTH_USER_MODEL = 'watermelon_user.User'
 
 
 # Database
